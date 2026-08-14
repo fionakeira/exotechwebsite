@@ -161,7 +161,7 @@ footer { padding-top: 28px; }
   .hero-render { top: auto; right: clamp(-112px,-17vw,-68px); bottom: 8px; width: max(820px,145vw); min-width: 0; max-width: none; height: auto; object-fit: contain; object-position: right bottom; }
   .brand, .brand img { width: 44px !important; max-width: 44px; height: 44px !important; max-height: 44px; }
   .hero { top: 138px; left: 20px; width: calc(100% - 40px); transform: none; }
-  .hero h1 { margin-bottom: 22px; font-size: clamp(38px,9vw,48px); line-height: .98; letter-spacing: -.035em; }
+  .hero h1 { margin-bottom: 22px; font-size: clamp(27px,7.6vw,40px); line-height: .98; letter-spacing: -.035em; }
   .hero-line { white-space: nowrap; }
   .hero .intro { max-width: 340px; color: #a4b0b9; font-size: 14px; line-height: 1.62; }
   .controls { left: 22px; right: 22px; bottom: 24px; overflow-x: auto; }

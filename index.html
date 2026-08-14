@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070a0f" />
+    <meta name="description" content="Interactive ExotechHK exoskeleton viewer" />
+    <title>ExotechHK — Interactive Exoskeleton</title>
+  </head>
+  <body>
+    <section class="experience">
+      <img class="hero-render" src="/assets/render.jpg" alt="ExoTechHK industrial exoskeleton" draggable="false" />
+      <canvas id="scene" aria-label="3D exoskeleton viewer"></canvas>
+
+      <header class="topbar">
+        <a class="brand" href="https://exotechhk.com/" target="_top" aria-label="Visit ExoTechHK">
+          <img src="/assets/logo.png" alt="ExoTechHK" width="48" height="48" draggable="false" />
+        </a>
+        <div class="header-tools"><nav class="mini-nav" aria-label="Primary navigation">
+          <a href="#exocore">Exo-Core</a><a href="#about">About</a><a href="#contact">Contact</a>
+        </nav><div class="language-switcher" role="group" aria-label="Language"><button type="button" data-language="en">EN</button><span>/</span><button type="button" data-language="zh-HK">中文</button></div></div>
+      </header>
+
+      <main class="hero">
+        <h1>Supporting your work,<br /><em>securing your life.</em></h1>
+        <p class="intro">Wearable assistance designed around lifting, carrying, bending, and walking tasks.</p>
+      </main>
+
+      <div class="controls" id="viewer-controls" aria-label="Viewer controls" hidden>
+        <button id="animation-button" type="button" hidden><span>▶</span> Motion</button>
+      </div>
+
+    </section>
+
+    <section class="exocore-details" id="exocore" aria-labelledby="exocore-details-title">
+      <header class="exocore-details-heading">
+        <h2 id="exocore-details-title">EXO-CORE</h2>
+        <p>Adaptively Support<br />Bending and Walking</p>
+      </header>
+      <div class="exocore-details-layout">
+        <div class="exocore-image-space">
+          <img src="/assets/exocore2.png" alt="Exo-Core lower-body wearable exoskeleton" loading="lazy" draggable="false" />
+        </div>
+        <div class="exocore-details-list">
+          <article class="exocore-detail-fact"><span>ASSISTANCE</span><h3>28<small>kg</small></h3><p>Lifting Assistance</p></article>
+          <article class="exocore-detail-fact"><span>WEIGHT</span><h3>3.8<small>kg</small></h3><p>System Weight</p></article>
+          <article class="exocore-detail-fact fact-wide"><span>OPERATION</span><h3>~4.5<small>h</small></h3><p>Typical Operation Time</p></article>
+          <article class="exocore-detail-fact"><span>MEASURED RESULT</span><h3>30<small>%</small></h3><p>Body Stress Reduction</p></article>
+          <article class="exocore-detail-fact fact-wide fact-statement"><span>MOVEMENT</span><h3>Lifting · Lowering · Walking</h3><p>Designed to Assist Movement</p></article>
+          <article class="exocore-detail-fact"><span>ASSISTED JOINTS</span><h3>Hip Joint<br />Lower Back</h3><p>Targeted Assistance</p></article>
+          <article class="exocore-detail-fact"><span>ACTUATION</span><h3>Active Powered</h3><p>Actuation Type</p></article>
+          <article class="exocore-detail-fact fact-tall"><span>MATERIALS</span><h3>Carbon Fiber<br />Aerospace-Grade Aluminium<br />ABS Plastic</h3><p>Engineered Materials</p></article>
+          <article class="exocore-detail-fact"><span>CHARGING</span><h3>~1.5<small>h</small></h3><p>USB Type-C PD 3.0 · @ 60W</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about reveal" id="about">
+      <div><span class="kicker">Company / ExoTechHK</span><h2>About Us</h2></div>
+      <p>ExoTechHK Limited is a robotics startup from The Chinese University of Hong Kong focusing on the development of exoskeleton solutions. With a team of professor and researchers, we are dedicated in developing innovative robotic technologies and pushing the application of exoskeletons in the industrial sector. Our goal is to enhance the strength and mobility of workers and reduce the risk of work-related injuries.</p>
+    </section>
+
+    <section class="contact reveal" id="contact">
+      <div class="contact-heading"><h2>Contact Us</h2></div>
+      <form class="contact-form" id="contact-form"><p>Feel free to contact us.</p><label><span>Name</span><input name="name" type="text" autocomplete="name" placeholder="Name" /></label><label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="Email*" required /></label><label><span>Message</span><textarea name="message" rows="7" placeholder="Message" required></textarea></label><button type="submit">Send</button></form>
+      <address><h3>Contact information</h3><a class="contact-email" href="mailto:general@exotechhk.com">general@exotechhk.com</a><h4>ExoTechHK Limited</h4><div><span>Address</span><p>Unit 1031, 10/F, Building 19W,<br />No. 19 Science Park West Avenue,<br />Hong Kong Science Park,<br />Pak Shek Kok, N.T., Hong Kong</p></div><div><span>Phone</span><a href="tel:+85290249289">+852 9024 9289</a></div></address>
+    </section>
+
+    <footer><small>Copyright © 2025 ExoTechHK - All Rights Reserved.</small></footer>
+
+    <div class="loader" id="loader">
+      <div class="loader-copy"><span>Initializing exoskeleton</span><b id="load-percent">0%</b></div>
+      <div class="loader-track"><i id="load-bar"></i></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

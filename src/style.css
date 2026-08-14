@@ -10,10 +10,10 @@ html { width: 100%; margin: 0; scroll-behavior: auto; scroll-padding-top: var(--
 body { width: 100%; margin: 0; overflow-x: hidden; }
 p { line-height: 1.6; }
 @media (min-width: 761px) { html { scroll-snap-type: y proximity; } }
-.experience { position: relative; width: 100%; height: 100svh; min-height: 620px; overflow: hidden; scroll-snap-align: start; background: #03070e; }
+.experience { position: relative; width: 100%; height: 100svh; min-height: 620px; overflow: hidden; scroll-snap-align: start; background: radial-gradient(ellipse at 74% 46%,#314d9b 0%,#172d63 28%,#07101f 56%,#03070e 78%); }
 .experience::before { content: ''; position: absolute; z-index: 1; inset: 0; pointer-events: none; background: linear-gradient(90deg,rgba(0,3,8,.36) 0%,rgba(0,3,8,.12) 36%,transparent 58%); }
 .experience::after { content: ''; position: absolute; z-index: 1; right: 0; bottom: -1px; left: 0; height: 42%; pointer-events: none; background: linear-gradient(180deg,rgba(17,29,45,0) 0%,rgba(17,29,45,.04) 18%,rgba(17,29,45,.13) 38%,rgba(17,29,45,.32) 58%,rgba(17,29,45,.68) 78%,#111d2d 96%,#111d2d 100%); }
-.hero-render { position: absolute; z-index: 0; top: var(--header-height); right: 0; bottom: 0; width: 100%; height: calc(100% - var(--header-height)); object-fit: contain; object-position: right center; background: #03070e; filter: brightness(1.18) contrast(1.02) saturate(1.04); }
+.hero-render { position: absolute; z-index: 0; top: calc(var(--header-height) - 14px); right: 0; bottom: 0; width: 100%; height: calc(100% - var(--header-height) + 14px); object-fit: contain; object-position: right center; background: transparent; filter: brightness(1.18) contrast(1.02) saturate(1.04); }
 #scene { display: none; }
 .topbar { position: fixed; z-index: 9; top: 0; left: 0; width: 100%; height: var(--header-height); display: flex; align-items: center; justify-content: space-between; padding: 6px 42px; border-bottom: 1px solid rgba(255,255,255,.09); background: rgba(7,16,27,.76); backdrop-filter: blur(18px) saturate(1.15); -webkit-backdrop-filter: blur(18px) saturate(1.15); }
 .mini-nav { display: flex; gap: 32px; }
@@ -158,7 +158,7 @@ footer { padding-top: 28px; }
   :root { --header-height: 60px; }
   .experience { height: max(100svh,980px); min-height: 980px; }
   .topbar { height: 60px; padding: 6px 22px; }
-  .hero-render { top: auto; right: clamp(-112px,-17vw,-68px); bottom: 8px; width: max(820px,145vw); min-width: 0; max-width: none; height: auto; object-fit: contain; object-position: right bottom; }
+  .hero-render { top: calc(var(--header-height) - 14px); right: clamp(-112px,-17vw,-68px); bottom: auto; width: max(820px,145vw); min-width: 0; max-width: none; height: auto; object-fit: contain; object-position: right top; }
   .brand, .brand img { width: 44px !important; max-width: 44px; height: 44px !important; max-height: 44px; }
   .hero { top: 138px; left: 20px; width: calc(100% - 40px); transform: none; }
   .hero h1 { margin-bottom: 22px; font-size: clamp(27px,7.6vw,40px); line-height: .98; letter-spacing: -.035em; }

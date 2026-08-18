@@ -154,14 +154,12 @@ html[lang="en"] .application-copy strong {
 .performance-grid strong { font-size: clamp(64px,8vw,116px); }
 .contact { padding: 7vw; }
 footer { padding-top: 28px; }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   :root { --header-height: 60px; }
   .experience {
     height: clamp(430px,92vw,680px);
     min-height: 430px;
-    background:
-      linear-gradient(180deg,transparent 48%,rgba(5,11,20,.3) 70%,#050b14 100%),
-      radial-gradient(ellipse at 74% 42%,#314d9b 0%,#172d63 28%,#07101f 58%,#03070e 80%) !important;
+    background: radial-gradient(ellipse at 72% 48%,#314d9b 0%,#172d63 32%,#0a1830 62%,#050b14 100%) !important;
   }
   .experience::after {
     height: 52%;
@@ -190,14 +188,27 @@ footer { padding-top: 28px; }
   .about { grid-template-columns: 1fr; gap: 24px; padding: 72px 22px; }.about > p { margin-top: 0; font-size: 16px; line-height: 1.75; }
   footer { padding: 24px 22px; }
 }
-@media (max-width:760px) and (orientation:portrait) {
+@media (max-width:768px) and (orientation:portrait) {
   .experience {
-    height: 100svh;
-    min-height: 100svh;
+    --hero-visual-height: calc(100svh - var(--header-height));
+    height: calc(var(--hero-visual-height) + var(--header-height));
+    min-height: calc(var(--hero-visual-height) + var(--header-height));
+  }
+  .hero-render {
+    top: calc(var(--header-height) + 2svh);
+    right: clamp(-132px,-20vw,-78px);
+    width: max(880px,155vw);
   }
   .experience::after {
-    height: 58%;
-    background: linear-gradient(180deg,transparent 0%,rgba(5,11,20,.18) 28%,rgba(5,11,20,.7) 70%,#050b14 100%);
+    height: 24%;
+    background: linear-gradient(180deg,transparent 0%,rgba(5,11,20,.16) 28%,rgba(5,11,20,.62) 72%,#050b14 100%);
+  }
+  @supports (height: 100dvh) {
+    .experience {
+      --hero-visual-height: calc(100dvh - var(--header-height));
+      height: calc(var(--hero-visual-height) + var(--header-height));
+      min-height: calc(var(--hero-visual-height) + var(--header-height));
+    }
   }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }.reveal { opacity: 1; transform: none; transition: none; } }
@@ -238,9 +249,9 @@ footer { padding-top: 28px; }
 .contact address div { border-color: rgba(137,179,218,.22); }
 .contact address a, .contact address p { color: #a4b4c2; }
 footer { background: #07101b; }
-@media (max-width:760px) { .ecosystem { min-height: 0; margin-top: 0; padding: 72px 22px; background: #050b14; }.ecosystem .section-heading { width: 100%; }.ecosystem .lineup { margin-top: 56px; } }
-@media (max-width:760px) { .lineup-core { min-height: 0; padding-right: 46% !important; padding-bottom: 20px !important; }.lineup-core img { top: -7%; right: -2%; width: 45%; height: 125%; object-position: 69% center; } }
-@media (max-width:760px) { .lineup-development { padding: 28px 0 8px; border-top: 1px solid rgba(129,174,216,.22); border-left: 0; }.lineup-development strong { font-size: clamp(28px,9vw,40px); } }
+@media (max-width:768px) { .ecosystem { min-height: 0; margin-top: 0; padding: 72px 22px; background: #050b14; }.ecosystem .section-heading { width: 100%; }.ecosystem .lineup { margin-top: 56px; } }
+@media (max-width:768px) { .lineup-core { min-height: 0; padding-right: 46% !important; padding-bottom: 20px !important; }.lineup-core img { top: -7%; right: -2%; width: 45%; height: 125%; object-position: 69% center; } }
+@media (max-width:768px) { .lineup-development { padding: 28px 0 8px; border-top: 1px solid rgba(129,174,216,.22); border-left: 0; }.lineup-development strong { font-size: clamp(28px,9vw,40px); } }
 
 /* Exo-Core facts and constrained sticky product story. */
 .exocore-facts { position: relative; padding: clamp(84px,8vw,132px) 7vw; scroll-margin-top: 60px; color: #eaf3f8; background: linear-gradient(135deg,#07111d 0%,#0b1c30 58%,#102b49 100%); }
@@ -312,7 +323,7 @@ html[lang="zh-HK"] .exocore-detail-fact.fact-tall p { font-size: clamp(16px,1.35
   .exocore-details-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .exocore-detail-fact.fact-statement { grid-column: 1 / -1; }
 }
-@media (max-width:760px) {
+@media (max-width:768px) {
   .exocore-facts { padding: 76px 22px; }
   .exocore-details {
     padding: 32px 22px 76px;

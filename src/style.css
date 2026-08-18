@@ -181,7 +181,7 @@ footer { padding-top: 28px; }
   .experience::after { display: none; }
   .topbar { height: var(--header-height); padding: 6px 22px; border-bottom: 0; box-shadow: none; background: #06101e; }
   .hero-render {
-    top: calc(var(--header-height) + 1svh);
+    top: clamp(190px,22svh,210px);
     right: clamp(-132px,-20vw,-78px);
     bottom: auto;
     width: max(880px,155vw);

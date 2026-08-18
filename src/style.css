@@ -302,7 +302,7 @@ html[lang="zh-HK"] .exocore-details-heading > p { min-width: 245px; font-size: c
 html[lang="zh-HK"] .exocore-details-heading { grid-template-columns: max-content minmax(245px,1fr); column-gap: clamp(34px,4vw,58px); }
 .exocore-details-layout { display: grid; grid-template-columns: minmax(250px,.48fr) minmax(0,1.52fr); gap: clamp(26px,3.5vw,56px); align-items: start; }
 .exocore-image-space { position: sticky; top: calc(var(--header-height) + var(--header-content-gap) + var(--exo-heading-height, 150px) + var(--exo-heading-follow-gap)); min-height: min(58vh,560px); overflow: visible; border: 0; border-radius: 0; background: transparent; }
-.exocore-image-space img { position: absolute; top: 0; right: 0; display: block; width: auto; max-width: none; height: min(58vh,560px); object-fit: contain; object-position: center; transform: translateX(17.3%); filter: brightness(1.05) contrast(1.03) drop-shadow(0 26px 34px rgba(0,0,0,.32)); }
+.exocore-image-space img { position: absolute; top: 0; right: 0; display: block; width: auto; max-width: none; height: min(58vh,560px); object-fit: contain; object-position: center; transform: translateX(12%); filter: brightness(1.05) contrast(1.03) drop-shadow(0 26px 34px rgba(0,0,0,.32)); }
 @media (min-width:769px) and (max-height:720px) {
   .exocore-image-space { min-height: min(48vh,420px); }
   .exocore-image-space img { height: min(48vh,420px); object-position: center top; }

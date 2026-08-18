@@ -18,7 +18,7 @@ p { line-height: 1.6; }
   .hero-render {
     top: calc(50% + (var(--header-height) / 2));
     bottom: auto;
-    width: 100%;
+    width: 92%;
     height: auto;
     transform: translateY(-50%);
     object-fit: initial;

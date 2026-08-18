@@ -156,8 +156,17 @@ html[lang="en"] .application-copy strong {
 footer { padding-top: 28px; }
 @media (max-width: 760px) {
   :root { --header-height: 60px; }
-  .experience { background: radial-gradient(ellipse at 74% 46%,#314d9b 0%,#172d63 28%,#07101f 56%,#03070e 78%) !important; }
-  .experience { height: max(100svh,980px); min-height: 980px; }
+  .experience {
+    height: max(100svh,660px);
+    min-height: 660px;
+    background:
+      linear-gradient(180deg,transparent 48%,rgba(5,11,20,.3) 70%,#050b14 100%),
+      radial-gradient(ellipse at 74% 42%,#314d9b 0%,#172d63 28%,#07101f 58%,#03070e 80%) !important;
+  }
+  .experience::after {
+    height: 34%;
+    background: linear-gradient(180deg,transparent 0%,rgba(5,11,20,.22) 35%,rgba(5,11,20,.7) 72%,#050b14 100%);
+  }
   .topbar { height: 60px; padding: 6px 22px; }
   .hero-render { top: calc(var(--header-height) - 14px); right: clamp(-112px,-17vw,-68px); bottom: auto; width: max(820px,145vw); min-width: 0; max-width: none; height: auto; object-fit: contain; object-position: right top; }
   .brand, .brand img { width: 44px !important; max-width: 44px; height: 44px !important; max-height: 44px; }

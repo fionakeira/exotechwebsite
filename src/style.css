@@ -304,7 +304,10 @@ html[lang="zh-HK"] .exocore-detail-fact.fact-tall p { font-size: clamp(16px,1.35
 }
 @media (max-width:760px) {
   .exocore-facts { padding: 76px 22px; }
-  .exocore-details { padding: 32px 22px 76px; }
+  .exocore-details {
+    padding: 32px 22px 76px;
+    background: linear-gradient(180deg,#050b14 0%,#091522 90px,#10233a 220px,#0b1b2c 62%,#081522 100%);
+  }
   .exocore-facts-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; }
   .fact-card, .fact-card-primary, .fact-card-wide { grid-column: auto; grid-row: auto; min-height: 210px; }
   .fact-card-primary, .fact-card-wide { grid-column: 1/-1; }

@@ -24,8 +24,10 @@ p { line-height: 1.6; }
     transform: none;
     object-fit: contain;
     object-position: right center;
-    -webkit-mask-image: radial-gradient(ellipse 76% 78% at 74% 49%,#000 0%,#000 54%,rgba(0,0,0,.88) 66%,rgba(0,0,0,.42) 82%,transparent 100%);
-    mask-image: radial-gradient(ellipse 76% 78% at 74% 49%,#000 0%,#000 54%,rgba(0,0,0,.88) 66%,rgba(0,0,0,.42) 82%,transparent 100%);
+    -webkit-mask-image: linear-gradient(to right,transparent 0%,rgba(0,0,0,.08) 8%,rgba(0,0,0,.5) 23%,#000 40%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 80%,transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right,transparent 0%,rgba(0,0,0,.08) 8%,rgba(0,0,0,.5) 23%,#000 40%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 80%,transparent 100%);
+    mask-composite: intersect;
   }
 }
 @media (min-width: 769px) and (max-width: 1100px) {

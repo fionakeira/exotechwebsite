@@ -190,6 +190,16 @@ footer { padding-top: 28px; }
   .about { grid-template-columns: 1fr; gap: 24px; padding: 72px 22px; }.about > p { margin-top: 0; font-size: 16px; line-height: 1.75; }
   footer { padding: 24px 22px; }
 }
+@media (max-width:760px) and (orientation:portrait) {
+  .experience {
+    height: 100svh;
+    min-height: 100svh;
+  }
+  .experience::after {
+    height: 58%;
+    background: linear-gradient(180deg,transparent 0%,rgba(5,11,20,.18) 28%,rgba(5,11,20,.7) 70%,#050b14 100%);
+  }
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }.reveal { opacity: 1; transform: none; transition: none; } }
 
 /* Continuous dark product narrative — avoid hard slide-like section changes. */

@@ -56,14 +56,6 @@ if (staticHeroRender) {
   canvas.setAttribute('aria-hidden', 'true');
 }
 
-document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const form = new FormData(event.currentTarget);
-  const subject = `Website enquiry from ${form.get('name') || 'ExoTechHK visitor'}`;
-  const body = `Name: ${form.get('name') || ''}\nEmail: ${form.get('email') || ''}\n\n${form.get('message') || ''}`;
-  window.location.href = `mailto:general@exotechhk.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
-
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, 0.01, 1000);

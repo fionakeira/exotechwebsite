@@ -157,8 +157,8 @@ footer { padding-top: 28px; }
 @media (max-width: 760px) {
   :root { --header-height: 60px; }
   .experience {
-    height: max(100svh,660px);
-    min-height: 660px;
+    height: clamp(540px,112vw,760px);
+    min-height: 540px;
     background:
       linear-gradient(180deg,transparent 48%,rgba(5,11,20,.3) 70%,#050b14 100%),
       radial-gradient(ellipse at 74% 42%,#314d9b 0%,#172d63 28%,#07101f 58%,#03070e 80%) !important;
@@ -303,7 +303,8 @@ html[lang="zh-HK"] .exocore-detail-fact.fact-tall p { font-size: clamp(16px,1.35
   .exocore-detail-fact.fact-statement { grid-column: 1 / -1; }
 }
 @media (max-width:760px) {
-  .exocore-facts, .exocore-details { padding: 76px 22px; }
+  .exocore-facts { padding: 76px 22px; }
+  .exocore-details { padding: 48px 22px 76px; }
   .exocore-facts-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; }
   .fact-card, .fact-card-primary, .fact-card-wide { grid-column: auto; grid-row: auto; min-height: 210px; }
   .fact-card-primary, .fact-card-wide { grid-column: 1/-1; }

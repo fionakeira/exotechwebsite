@@ -172,10 +172,7 @@ footer { padding-top: 28px; }
   .experience {
     height: 100svh;
     min-height: 100svh;
-    background:
-      radial-gradient(ellipse 115% 76% at 70% 43%,rgba(64,99,205,.94) 0%,rgba(32,62,137,.78) 24%,rgba(12,29,63,.46) 49%,transparent 73%),
-      radial-gradient(ellipse 92% 58% at 62% 62%,rgba(26,54,116,.46) 0%,rgba(5,16,34,.24) 50%,transparent 78%),
-      linear-gradient(180deg,#06101e 0%,#040b16 56%,#020812 100%) !important;
+    background: radial-gradient(ellipse 108% 76% at 68% 46%,#526fd0 0%,#2a478e 27%,#14274f 49%,#09152b 69%,#020812 100%) !important;
   }
   .experience::before,
   .experience::after { display: none; }
@@ -191,8 +188,8 @@ footer { padding-top: 28px; }
     transform: none;
     object-fit: contain;
     object-position: right top;
-    -webkit-mask-image: radial-gradient(ellipse 63% 62% at 68% 43%,#000 0%,#000 54%,rgba(0,0,0,.72) 68%,transparent 100%);
-    mask-image: radial-gradient(ellipse 63% 62% at 68% 43%,#000 0%,#000 54%,rgba(0,0,0,.72) 68%,transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 63% 52% at 68% 47%,#000 0%,#000 52%,rgba(0,0,0,.68) 66%,transparent 100%);
+    mask-image: radial-gradient(ellipse 63% 52% at 68% 47%,#000 0%,#000 52%,rgba(0,0,0,.68) 66%,transparent 100%);
   }
   .brand, .brand img { width: 44px !important; max-width: 44px; height: 44px !important; max-height: 44px; }
   .hero { top: 138px; left: 20px; width: calc(100% - 40px); transform: none; }
@@ -218,8 +215,8 @@ footer { padding-top: 28px; }
 @media (max-width:768px) and (orientation:portrait) {
   @supports (height: 100dvh) {
     .experience {
-      height: 100dvh;
-      min-height: 100dvh;
+      height: max(100svh,100dvh);
+      min-height: max(100svh,100dvh);
     }
   }
 }

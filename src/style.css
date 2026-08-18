@@ -50,8 +50,8 @@ html[lang="zh-HK"] .mini-nav a {
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
 }
-.brand { display: block; flex: 0 0 62px; width: 62px; height: 62px; overflow: hidden; text-decoration: none; }
-.brand img { display: block; width: 62px !important; max-width: 62px; height: 62px !important; max-height: 62px; object-fit: contain; }
+.brand { display: block; flex: 0 0 210px; width: 210px; height: 59px; overflow: visible; text-decoration: none; }
+.brand img { display: block; width: 210px !important; max-width: 210px; height: 59px !important; max-height: 59px; object-fit: contain; }
 .hero { position: absolute; z-index: 2; top: 48%; left: 6vw; width: min(760px,56vw); pointer-events: none; transform: translateY(-50%); }
 .eyebrow { color: #4da3ff; font: clamp(12px,1vw,14px) DM Mono, monospace; letter-spacing: .16em; text-transform: uppercase; }
 h1 { margin: 0 0 24px; font-size: clamp(42px,4.7vw,74px); line-height: .97; letter-spacing: -.035em; font-weight: 500; }
@@ -199,7 +199,8 @@ footer { padding-top: 28px; }
     -webkit-mask-image: radial-gradient(ellipse 65% 44% at 68% 44%,#000 0%,#000 42%,rgba(0,0,0,.82) 58%,rgba(0,0,0,.42) 76%,transparent 100%);
     mask-image: radial-gradient(ellipse 65% 44% at 68% 44%,#000 0%,#000 42%,rgba(0,0,0,.82) 58%,rgba(0,0,0,.42) 76%,transparent 100%);
   }
-  .brand, .brand img { width: 44px !important; max-width: 44px; height: 44px !important; max-height: 44px; }
+  .brand { flex-basis: 126px; width: 126px; height: 36px; }
+  .brand img { width: 126px !important; max-width: 126px; height: 36px !important; max-height: 36px; }
   .hero { top: 138px; left: 20px; width: calc(100% - 40px); transform: none; }
   .hero h1 { margin-bottom: 22px; font-size: clamp(27px,7.6vw,40px); line-height: .98; letter-spacing: -.035em; }
   .hero-line { white-space: nowrap; }

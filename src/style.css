@@ -24,8 +24,8 @@ p { line-height: 1.6; }
     transform: none;
     object-fit: contain;
     object-position: right center;
-    -webkit-mask-image: linear-gradient(to bottom,transparent 0%,#000 18%,#000 78%,transparent 100%);
-    mask-image: linear-gradient(to bottom,transparent 0%,#000 18%,#000 78%,transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 76% 78% at 74% 49%,#000 0%,#000 54%,rgba(0,0,0,.88) 66%,rgba(0,0,0,.42) 82%,transparent 100%);
+    mask-image: radial-gradient(ellipse 76% 78% at 74% 49%,#000 0%,#000 54%,rgba(0,0,0,.88) 66%,rgba(0,0,0,.42) 82%,transparent 100%);
   }
 }
 @media (min-width: 769px) and (max-width: 1100px) {

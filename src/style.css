@@ -1,14 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-:root { --font-primary: Manrope, 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --header-height: 76px; --header-content-gap: 24px; font-family: var(--font-primary); color: #f2f7f6; background: #070a0f; font-synthesis: none; }
+:root {
+  --font-display: 'Space Grotesk', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-cjk: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-primary: var(--font-body);
+  --type-display: clamp(42px,4.7vw,74px);
+  --type-section: clamp(42px,5.4vw,76px);
+  --type-subheading: clamp(20px,2vw,30px);
+  --type-body: clamp(14px,1vw,16px);
+  --type-body-small: clamp(12px,.9vw,14px);
+  --type-label: clamp(10px,.85vw,12px);
+  --header-height: 76px;
+  --header-content-gap: 24px;
+  font-family: var(--font-body);
+  color: #f2f7f6;
+  background: #070a0f;
+  font-synthesis: none;
+}
 img { -webkit-user-drag: none; user-select: none; }
-html[lang="zh-HK"] { font-family: var(--font-primary); }
-html[lang="zh-HK"] h1, html[lang="zh-HK"] h2, html[lang="zh-HK"] h3 { letter-spacing: -.035em; line-height: 1.08; }
+html[lang="zh-HK"] { font-family: var(--font-cjk); }
+html[lang="zh-HK"] h1, html[lang="zh-HK"] h2, html[lang="zh-HK"] h3 { letter-spacing: .01em; line-height: 1.08; }
 html[lang="zh-HK"] p { letter-spacing: 0; }
-* { box-sizing: border-box; font-family: var(--font-primary) !important; }
+* { box-sizing: border-box; }
 html { width: 100%; margin: 0; scroll-behavior: auto; scroll-padding-top: var(--header-height); }
-body { width: 100%; margin: 0; overflow-x: hidden; }
-p { line-height: 1.6; }
+body { width: 100%; margin: 0; overflow-x: hidden; font-family: var(--font-body); font-weight: 400; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+p { font-family: var(--font-body); line-height: 1.65; }
 @media (min-width: 761px) { html { scroll-snap-type: y proximity; } }
 .experience { position: relative; width: 100%; height: 100svh; min-height: 620px; overflow: hidden; scroll-snap-align: start; background: radial-gradient(ellipse 62% 86% at 76% 48%,#203c82 0%,#10234f 38%,#050b18 68%,#000 100%) !important; }
 .experience::before { content: ''; position: absolute; z-index: 1; inset: 0; pointer-events: none; background: linear-gradient(90deg,rgba(0,3,8,.36) 0%,rgba(0,3,8,.12) 36%,transparent 58%); }
@@ -385,4 +402,207 @@ html[lang="zh-HK"] .exocore-detail-fact.fact-tall p { font-size: clamp(16px,1.35
 .contact address span,
 footer span {
   font-size: clamp(12px, 1vw, 14px);
+}
+
+/* Unified industrial typography system. */
+.hero h1,
+.section-heading h2,
+.about h2,
+.contact h2,
+.contact address h3,
+.contact address h4,
+.exocore-facts-heading h2,
+.exocore-details-heading h2,
+.exocore-detail-fact h3,
+.fact-card strong,
+.lineup strong,
+.lineup-development strong,
+.product-copy h2,
+.product-metrics strong,
+.application-copy strong,
+.application-grid h3,
+.compare-grid h3,
+.compare-spec strong,
+.performance-grid strong {
+  font-family: var(--font-display);
+}
+
+.hero h1 {
+  font-size: var(--type-display);
+  font-weight: 500;
+  letter-spacing: -.035em;
+}
+
+.section-heading h2,
+.about h2,
+.contact h2 {
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+body,
+.mini-nav a,
+.language-switcher,
+.language-switcher button,
+button,
+input,
+textarea,
+.intro,
+.descriptor,
+.section-heading > p,
+.about > p,
+.contact-form,
+.contact address,
+.exocore-details-heading > p,
+.exocore-detail-fact p,
+.fact-card p,
+.product-metrics p,
+.application-grid p,
+.compare-grid dd {
+  font-family: var(--font-body);
+}
+
+.mini-nav a,
+.language-switcher,
+.language-switcher button {
+  font-weight: 500;
+  letter-spacing: .035em;
+}
+
+button,
+.contact-form button {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: .055em;
+}
+
+.eyebrow,
+.kicker,
+.fact-card > span,
+.exocore-detail-fact > span,
+.contact address span,
+footer span,
+.scroll-cue,
+.activity-line,
+.product-media figcaption span,
+.product-media figcaption small {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+
+.intro,
+.about > p,
+.contact-form > p,
+.contact address a,
+.contact address p,
+.exocore-detail-fact p,
+.fact-card p {
+  font-weight: 400;
+}
+
+.exocore-detail-fact h3,
+.fact-card strong,
+.product-metrics strong,
+.performance-grid strong,
+.compare-spec strong {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.exocore-detail-fact h3 small,
+.fact-card strong small,
+.product-metrics strong span,
+.performance-grid strong span {
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+html[lang="zh-HK"] body,
+html[lang="zh-HK"] p,
+html[lang="zh-HK"] button,
+html[lang="zh-HK"] input,
+html[lang="zh-HK"] textarea,
+html[lang="zh-HK"] .mini-nav a,
+html[lang="zh-HK"] .language-switcher,
+html[lang="zh-HK"] .exocore-details-heading > p,
+html[lang="zh-HK"] .exocore-detail-fact h3,
+html[lang="zh-HK"] .exocore-detail-fact p,
+html[lang="zh-HK"] .about h2,
+html[lang="zh-HK"] .contact h2,
+html[lang="zh-HK"] .contact address h3,
+html[lang="zh-HK"] .contact address h4 {
+  font-family: var(--font-cjk);
+}
+
+/* EXO-CORE remains a Latin product name in both language modes. */
+html[lang="zh-HK"] .exocore-details-heading h2 {
+  font-family: var(--font-display);
+}
+
+.language-switcher button[data-language="zh-HK"],
+html[lang="zh-HK"] .language-switcher button {
+  font-family: var(--font-cjk);
+}
+
+/* Reusable type roles for current and future site components. */
+.type-display,
+.type-heading-1 {
+  font-family: var(--font-display);
+  font-size: var(--type-display);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+
+.type-heading-2 {
+  font-family: var(--font-display);
+  font-size: var(--type-section);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.025em;
+}
+
+.type-subheading {
+  font-family: var(--font-display);
+  font-size: var(--type-subheading);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.type-body { font: 400 var(--type-body)/1.65 var(--font-body); }
+.type-body-small { font: 400 var(--type-body-small)/1.55 var(--font-body); }
+.type-data-number { font: 500 var(--type-section)/.95 var(--font-display); font-variant-numeric: tabular-nums lining-nums; }
+.type-data-label { font: 500 var(--type-body-small)/1.45 var(--font-body); }
+.type-button { font: 600 var(--type-body-small)/1 var(--font-body); letter-spacing: .055em; }
+.type-nav { font: 500 var(--type-body-small)/1 var(--font-body); letter-spacing: .035em; }
+
+/* Retire the former display monospace without changing component geometry. */
+.eyebrow,
+.kicker,
+.lineup span,
+.lineup i,
+.lineup-development span,
+.activity-line,
+.product-metrics strong span,
+.product-metrics b,
+.product-media figcaption span,
+.product-media figcaption small,
+.compare-grid header span,
+.compare-grid dt,
+.application-grid article > span,
+.application-grid article > div,
+.performance-grid strong span,
+.performance-grid b,
+.performance-grid p,
+.footnotes,
+.contact address span,
+footer span,
+footer small,
+.product-metrics > small,
+.fact-card > span,
+.exocore-facts-note,
+.exocore-detail-fact small {
+  font-family: var(--font-body);
 }

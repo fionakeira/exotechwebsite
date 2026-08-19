@@ -294,7 +294,7 @@ footer { background: #07101b; }
 .exocore-details-heading .kicker { grid-column: 1 / -1; display: block; margin-bottom: 22px; font-size: clamp(11px,1vw,14px); letter-spacing: .1em; }
 html[lang="zh-HK"] .exocore-details-heading .kicker { font-size: clamp(12px,1.05vw,15px); letter-spacing: .1em; }
 .exocore-details-heading h2 { margin: 0; font-size: clamp(64px,7.4vw,124px); line-height: .86; letter-spacing: -.065em; font-weight: 500; white-space: nowrap; }
-html[lang="zh-HK"] .exocore-details-heading h2 { font-family: var(--font-primary); line-height: .82; letter-spacing: -.07em; }
+html[lang="zh-HK"] .exocore-details-heading h2 { font-family: var(--font-primary); line-height: .86; letter-spacing: .01em; }
 .exocore-details-heading > p { margin: 0 0 .05em; color: #aebdca; font-size: clamp(25px,2.75vw,38px); line-height: 1.06; letter-spacing: -.035em; white-space: nowrap; }
 .wide-subtitle-space { display: none; }
 @media (min-width: 1600px) {

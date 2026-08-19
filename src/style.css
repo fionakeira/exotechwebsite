@@ -355,6 +355,7 @@ html[lang="zh-HK"] .exocore-detail-fact.fact-tall p { font-size: clamp(16px,1.35
   .exocore-image-space { position: relative; top: auto; min-height: 360px; margin-bottom: 24px; }
   .exocore-image-space img { right: 0; left: auto; height: 360px; transform: translateX(calc(-4% + 24px)); }
   .exocore-details-heading { position: relative; top: auto; margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; background: none; }
+  .exocore-details-heading h2 { font-size: clamp(48px,13vw,56px); }
   .exocore-details-heading::before { display: none; }
   .exocore-details-list { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
   .exocore-detail-fact, .exocore-detail-fact.fact-feature { grid-column: auto; min-height: 150px; padding: 20px 18px; opacity: 1; transform: none; }

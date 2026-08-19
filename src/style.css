@@ -535,6 +535,40 @@ html[lang="zh-HK"] .exocore-details-heading > p {
   }
 }
 
+/* Phone hero: keep the copy compact and clear of the product render. */
+@media (max-width: 480px) {
+  .hero {
+    top: 116px;
+  }
+
+  .hero h1 {
+    margin-bottom: 13px;
+    font-size: clamp(28px, 7.2vw, 31px);
+    line-height: 1.02;
+    letter-spacing: -.035em;
+  }
+
+  .hero .intro {
+    width: max-content;
+    max-width: calc(100vw - 40px);
+    font-size: clamp(10.5px, 2.75vw, 12px);
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .hero-cta {
+    margin-top: 13px;
+    padding: 11px 16px;
+    font-size: 12px;
+  }
+
+  .hero-render {
+    top: 208px;
+    -webkit-mask-image: radial-gradient(ellipse 72% 62% at 68% 48%, #000 0%, #000 68%, rgba(0,0,0,.9) 78%, rgba(0,0,0,.5) 90%, transparent 100%);
+    mask-image: radial-gradient(ellipse 72% 62% at 68% 48%, #000 0%, #000 68%, rgba(0,0,0,.9) 78%, rgba(0,0,0,.5) 90%, transparent 100%);
+  }
+}
+
 .exocore-detail-fact h3,
 .fact-card strong,
 .product-metrics strong,

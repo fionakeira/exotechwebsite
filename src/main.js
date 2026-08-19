@@ -23,7 +23,7 @@ const localizedContent = {
   },
   'zh-HK': {
     nav: ['Exo-Core', '關於我們', '預約示範'],
-    heroEyebrow: 'EXOSKELETON TECHNOLOGIES', heroTitle: '<span class="hero-line">助力工作</span><em class="hero-line">守護生活</em>', heroIntro: '輕巧穿戴式助力，適用於工業工作。', heroCta: '預約示範', discover: '探索 EXOTECHK <span>↓</span>',
+    heroEyebrow: 'EXOSKELETON TECHNOLOGIES', heroTitle: '<span class="hero-line">助力工作</span><em class="hero-line">守護生活</em>', heroIntro: '輕巧穿戴式助力，適用於工業工作', heroCta: '預約示範', discover: '探索 EXOTECHK <span>↓</span>',
     detailsKicker: 'EXO-CORE', detailsTitle: '產品重點', detailMeta: ['抬升助力','系統重量','運作時間','實測結果','扭矩','適用工作','輔助部位','動力','助力模式','材料','速度','電池','防護','充電','控制'], detailTitles: ['28<small>公斤</small>','3.8<small>公斤</small>','~4.5<small>小時</small>','30<small>%</small>','60<small>Nm</small>','抬升 · 下降 · 行走','髖關節 ·<br>腰背','主動動力','跟隨抬升 · 大力抬升 · 行走 + 抬升','碳纖維<br>航太級鋁材<br>ABS 塑膠','2000<small>度/秒</small>','90<small>Wh</small>','IP54','~1.5<small>小時</small>','外骨骼機身控制'], detailDescriptions: ['助力','系統重量','運作時間','實測身體壓力降低','綜合峰值助力扭矩','適合重複及高體力需求工作。','針對性助力','動力輔助','三種助力模式','適用於工業工作環境。','峰值輔助速度','電池容量','同等防水／防塵保護','USB Type-C PD 3.0','整合式控制面板'], factsNote: '',
     aboutKicker: '公司 / ExoTechHK', aboutTitle: '關於我們', aboutBody: 'ExoTechHK 研發適用於高體力需求工作的穿戴式助力方案。我們的使命是減輕工作疲勞、支持更安全的工作方式，並讓實用的外骨骼技術更易普及。我們結合機器人工程、以人為本的設計及實地測試，開發適用於工業及日常工作環境的輕巧可靠工具。', contactKicker: '示範 / 試點', contactTitle: '預約示範', formIntro: '傳送訊息給我們', formFields: ['姓名','電郵*','訊息'], send: '傳送', contactInfo: '聯絡資料', contactLabels: ['地址','電話'], address: '香港特別行政區 新界 白石角<br>香港科學園 19W大樓 10樓 1031室', footerTagline: '助力工作<br>守護生活', footerLabels: ['產品','聯絡','地點'], location: '香港科學園<br>香港白石角', copyright: 'Copyright © 2025 ExoTechHK - All Rights Reserved.', loader: '正在初始化外骨骼'
   }

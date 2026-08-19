@@ -353,7 +353,7 @@ html[lang="zh-HK"] .exocore-detail-fact.fact-tall p { font-size: clamp(16px,1.35
   .fact-card-primary { min-height: 290px; }
   .exocore-details-layout { display: block; }
   .exocore-image-space { position: relative; top: auto; min-height: 360px; margin-bottom: 24px; }
-  .exocore-image-space img { right: 0; height: 360px; transform: translateX(-4%); }
+  .exocore-image-space img { right: auto; left: 50%; height: 360px; transform: translateX(-50%); }
   .exocore-details-heading { position: relative; top: auto; margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; background: none; }
   .exocore-details-heading::before { display: none; }
   .exocore-details-list { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }

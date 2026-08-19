@@ -277,6 +277,9 @@ footer { padding-top: 28px; }
 .application-grid p { color: #8193a5; }
 .performance { background: linear-gradient(180deg,#091521 0%,#07101d 60%,#0a1724 100%); }
 .contact { background: linear-gradient(180deg,#0a1724 0%,#0d1b2a 58%,#07101b 100%); color: #e8f1f8; }
+@media (min-width: 769px) {
+  .contact { scroll-margin-top: calc(48px - 7vw); }
+}
 .contact::before { content: ''; position: absolute; width: 65vw; aspect-ratio: 1; right: -30vw; top: 110px; border-radius: 50%; background: rgba(52,133,217,.15); filter: blur(100px); }
 .contact > * { position: relative; }
 .contact address div { border-color: rgba(137,179,218,.22); }

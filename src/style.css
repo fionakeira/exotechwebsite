@@ -501,6 +501,35 @@ footer span,
   font-weight: 400;
 }
 
+/* Supporting copy roles: readable body copy and a distinct product subheading. */
+.hero .intro {
+  font-family: var(--font-body);
+  color: #b2bec8;
+  font-size: clamp(15px, 1.05vw, 17px);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+.exocore-details-heading > p {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+html[lang="zh-HK"] .exocore-details-heading > p {
+  font-family: var(--font-cjk);
+  font-weight: 500;
+  letter-spacing: .055em;
+}
+
+@media (max-width: 768px) {
+  .hero .intro {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
 .exocore-detail-fact h3,
 .fact-card strong,
 .product-metrics strong,

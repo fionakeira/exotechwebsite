@@ -77,6 +77,8 @@ h1 { margin: 0 0 24px; font-size: clamp(42px,4.7vw,74px); line-height: .97; lett
 .hero-line { display: block; white-space: nowrap; }
 h1 em { color: rgba(205,216,226,.72); -webkit-text-stroke: 0; font-style: normal; letter-spacing: inherit; }
 .intro { max-width: 470px; color: #a4b0b9; font-size: clamp(14px,1vw,16px); line-height: 1.62; text-wrap: pretty; }
+.hero-cta { display: inline-flex; align-items: center; justify-content: center; margin-top: 24px; padding: 13px 20px; border: 1px solid rgba(77,163,255,.55); border-radius: 3px; color: #f4f8fc; background: #176bbd; font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: .02em; text-decoration: none; pointer-events: auto; transition: background .2s,transform .2s; }
+.hero-cta:hover { background: #0d5ca9; transform: translateY(-2px); }
 .controls { position: absolute; z-index: 4; right: 42px; bottom: 42px; display: flex; border: 1px solid rgba(255,255,255,.12); background: rgba(7,10,15,.68); backdrop-filter: blur(15px); }
 .controls[hidden] { display: none; }
 button { appearance: none; border: 0; border-right: 1px solid rgba(255,255,255,.1); padding: 13px 15px; color: #82908d; background: transparent; font: 9px DM Mono, monospace; text-transform: uppercase; letter-spacing: .08em; cursor: pointer; transition: .2s; }

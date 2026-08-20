@@ -202,10 +202,8 @@ footer { padding-top: 28px; }
   .experience {
     height: 100svh;
     min-height: 100svh;
-    height: 100dvh;
-    min-height: 100dvh;
     overflow: hidden;
-    background: radial-gradient(ellipse 108% 76% at 68% 46%,#526fd0 0%,#2a478e 27%,#14274f 49%,#09152b 66%,#020711 78%,#00030a 90%,#000 100%) !important;
+    background: radial-gradient(ellipse 105% 62% at 68% 50%,#526fd0 0%,#2a478e 27%,#14274f 46%,#071126 63%,#01050c 78%,#000 100%) !important;
   }
   .experience::before,
   .experience::after { display: none; }
